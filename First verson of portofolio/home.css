@@ -1,0 +1,329 @@
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-image: url('./neon.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+   scroll-behavior: smooth;
+}
+/*#nav-bar {
+    justify-content: space-between;
+    margin-left: 14%;
+    position: sticky;
+    font-size: 20px;
+    font-family: Helvetica;
+    margin-top: 1%;
+    overflow: hidden;
+}
+#nav-bar a{
+    padding-right: 10px;
+	padding-left: 10px;
+    color: rgb(211, 211, 248);
+}
+#nav-bar #home {
+    font-family: Helvetica;
+    font-size: 30px;
+    color: rgb(232, 232, 253);
+}*/
+a {
+    text-decoration: none;
+}
+#txt1 {
+    margin-left: 10% ;
+    position: relative;
+    top: 16vh;
+    font-family: 'Quicksand', sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    transition: all .5s ease;
+
+
+}
+#txt2 {
+    margin-left: 10% ;
+    top: 18vh;
+    position: relative;
+    font-family: 'Quicksand', sans-serif;
+    color: rgb(211, 211, 248);
+    transition: all .5s ease;
+
+}
+#txt3 {
+    margin-left: 10% ;
+    top: 20vh;
+    position: relative;
+    font-family: 'Quicksand', sans-serif;
+    color: rgb(211, 211, 248);
+    transition: all .5s ease;
+}
+#txt3 #link {
+    margin-top: 10px;
+}
+.containerR {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    left: 70%;
+    top: -5%;
+    cursor: pointer;
+
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: rgb(154, 167, 241);
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  /* Rotate first bar */
+  .change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+  
+  /* Fade out the second bar */
+  .change .bar2 {opacity: 0;}
+  
+  /* Rotate last bar */
+  .change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    font-family: Helvetica;
+    color: white;
+}
+
+.brand-title {
+    font-size: 1.5rem;
+    margin: .5rem;
+}
+
+.navbar-links {
+    height: 100%;
+}
+
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    position: relative;
+    top: 1vh;
+    padding: 0;
+}
+.navbar .navbar-links ul #home {
+    font-size: 30px;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    top: 5%;
+    padding: 1rem;
+}
+
+.toggle-button {
+    top: 0.75rem;
+    margin-top: 1vh;
+    left: 5vh;
+    position: relative;
+    margin-right: auto;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+}
+#btn {
+    transition: all .5s ease;
+    color: rgb(211, 211, 248);
+    border: 3px solid white;
+    font-family: Helvetica;
+    font-size: 10px;
+    opacity: 70%;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1;
+    font-size: 17px;
+    background-color : transparent;
+    padding: 10px;
+    outline: none;
+    border-radius: 4px;
+}
+#btn:hover {
+    color: #001F3F;
+    background-color: #fff;
+}
+section {
+    height: 112vh;
+    width: 100%;
+  }
+*,
+:after,
+:before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+p{
+    color: white;
+    font-family: arial;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+  }
+  .scroll-down {
+    opacity: 1;
+    -webkit-transition: all .5s ease-in 3s;
+    transition: all .5s ease-in 3s;
+  }
+  
+  .scroll-down {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    margin-left: -16px;
+    display: block;
+    width: 32px;
+    height: 32px;
+    border: 2px solid #FFF;
+    background-size: 14px auto;
+    border-radius: 50%;
+    z-index: 2;
+    -webkit-animation: bounce 2s infinite 2s;
+    animation: bounce 2s infinite 2s;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+  }
+  
+  .scroll-down:before {
+      position: absolute;
+      top: calc(50% - 8px);
+      left: calc(50% - 6px);
+      transform: rotate(-45deg);
+      display: block;
+      width: 12px;
+      height: 12px;
+      content: "";
+      border: 2px solid white;
+      border-width: 0px 0 2px 2px;
+  }
+  
+  @keyframes bounce {
+    0%,
+    100%,
+    20%,
+    50%,
+    80% {
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0);
+    }
+    40% {
+      -webkit-transform: translateY(-10px);
+      -ms-transform: translateY(-10px);
+      transform: translateY(-10px);
+    }
+    60% {
+      -webkit-transform: translateY(-5px);
+      -ms-transform: translateY(-5px);
+      transform: translateY(-5px);
+    }
+  }
+  section.ok{
+    background-color: #555;
+  }
+  #discord {
+    font-size: 30px;
+    top: 38%;
+    right: 13vh;
+    position: relative;
+    color: white;
+  }
+  #slack {
+    position: relative;
+    font-size: 30px;
+    top: 38%;
+    right: 11vh;
+    cursor: pointer;
+    color: white;
+  }
+  #instagram {
+    font-size: 30px;
+    top: 38%;
+    right: 9vh;
+    position: relative;
+    color: white;
+    cursor: pointer;
+  }
+  #discord:hover {
+    color: #555;
+  }
+  #slack:hover {
+    color: #555;
+  }
+  #instagram:hover {
+    color: #555;
+  }
+
+  #github {
+    top: 38%;
+    right: 7vh;
+    position: relative;
+    font-size: 30px;
+    color: white;
+  }
+  #github:hover {
+    color: #555;
+  }
